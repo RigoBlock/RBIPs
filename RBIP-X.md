@@ -11,8 +11,8 @@ Note that an RBIP number will be assigned by an editor. When opening a pull requ
     Category (*only required for Standard Track): <Core | Networking | Interface | ERC> 
     Status: Draft
     Created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
-    Requires (*optional): <ZEIP number(s)>
-    Replaces (*optional): <ZEIP number(s)>
+    Requires (*optional): <RBIP number(s)>
+    Replaces (*optional): <RBIP number(s)>
 
 
 ## Simple Summary (2 Sentences)
