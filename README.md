@@ -1,4 +1,4 @@
-<img src="https://github.com/RigoBlock/PR/blob/master/RigoBlock%20Logo%2011.17.png" width="100px" >
+<img src="https://raw.githubusercontent.com/RigoBlock/PR/master/new-logos/RigoBlock-logo-1000x1000.png" width="50px" >
 
 # RBIPs
 RigoBlock Improvement Proposals (RBIPs) describe standards and protocol specifications for the RigoBlock protocol.
