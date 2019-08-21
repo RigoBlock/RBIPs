@@ -9,3 +9,4 @@ RigoBlock Improvement Proposals (RBIPs) describe standards and protocol specific
 | Title                                                                                                                       | Number | Version Included |
 | --------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------- |
 | [Allow for self-custody](https://github.com/RigoBlock/RBIPs/issues/1)                    | 1     | 2                |
+| [reduce incentives abuse by using eth as reference.](https://github.com/RigoBlock/RBIPs/issues/2)                    | 2     | 2                |
