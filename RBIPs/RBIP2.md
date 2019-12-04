@@ -13,7 +13,7 @@
 Add additional bindings to proof of performance calculation reward.
 
 ## Abstract
-
+Dramatically reduce potential abuse of proof of performance algorithm by setting some additional requirements which make the incentives system more decentralized and less vulnerable.
 
 ## Motivation
 
@@ -24,8 +24,6 @@ Proof of performance rewards pools operators based on the value of the pool and,
 The proof of performance reward is decreased by the ratio between eth in the pool and the pool value. Each such ratio < 1% entails the reward being zero, as a 1% minimum eth liquidity is required to guarantee NAV integrity.
 
 ## Rationale
-
-Dramatically reduce potential abuse of proof of performance algorithm by setting some additional requirements which make the incentives system more decentralized and less vulnerable.
 
 ## Notes
 
