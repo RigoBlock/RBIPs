@@ -1,6 +1,6 @@
 ## Preamble
 
-    RBIP: 19
+    RBIP: 4
     Title: add slashing condition to pop reward based on GRG pool operator balance
     Author: RB Core Team
     Type: Standard Track
