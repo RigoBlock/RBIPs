@@ -10,10 +10,11 @@
 
 ## Simple Summary
 
-The proposed improvement slashes the reward based on the amount of GRG tokens a pool operator holds. This has the dual effect of making it exponentially difficult to cheat the system and of creating an incentive for holding/accumulating GRGs.
+Upgrade proof of performance to reward provable performance.
 
 ## Abstract
 
+The proposed improvement slashes the reward based on the amount of GRG tokens a pool operator holds. This has the dual effect of making it exponentially difficult to cheat the system and of creating an incentive for holding/accumulating GRGs.
 
 ## Motivation
 
