@@ -1,6 +1,6 @@
 ## Preamble
 
-    RBIP: 19
+    RBIP: 1
     Title: Allow self-custody
     Author: RB Core Team
     Type: Standard Track
@@ -14,6 +14,7 @@ The current protocol design prevents tokens from being held outside of either th
 
 ## Abstract
 
+Meet market demand, get in parallel with industry standards, offer more heavy tested storage possibilities, open for off-chain/off-protocol trading by the pools operators.
 
 ## Motivation
 
@@ -25,9 +26,7 @@ There is a strong demand for cold storage solutions, which are not possible in t
 - The necessary condition is that pool operator holds a minimum GRG amount for certain thresholds
 - threshold levels and amounts required based on pi number.
 
-## Rationale (if a suggestion is proposed)
-
-Meet market demand, get in parallel with industry standards, offer more heavy tested storage possibilities, open for off-chain/off-protocol trading by the pools operators.
+## Rationale
 
 ## Notes
 
