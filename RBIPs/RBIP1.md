@@ -26,7 +26,14 @@ There is a strong demand for cold storage solutions, which are not possible in t
 - The necessary condition is that pool operator holds a minimum GRG amount for certain thresholds
 - threshold levels and amounts required based on pi number.
 
-## Rationale
+## Thresholds
+
+| Transfer Amount (ETH)                                                                                                                       | GRG required |
+| --------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------- |
+| [amount < 3.141592]                    | 0                |
+| [3.141592 <= amount < 9.8696]                    | 98                |
+| [9.8696 <= amount < 31]                    | 307                |
+| [amount >= 31]                    | 962                |
 
 ## Notes
 
