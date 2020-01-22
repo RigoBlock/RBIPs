@@ -23,7 +23,16 @@ Proof of performance rewards pools operators based on the value of the pool and,
 
 The proof of performance reward is decreased by the ratio between eth in the pool and the pool value. Each such ratio < 1% entails the reward being zero, as a 1% minimum eth liquidity is required to guarantee NAV integrity.
 
-## Rationale
+## Parameters
+
+| ETH as % of AUM | Multiplier | Salshing Factor |
+| --------------- | ---------- | --------------- |
+| [ 80 100 [ | 100% |  0% |
+| [ 60 80 [ | 82% | 18% |
+| [ 40 60 [ | 20.1% | 79.9% |
+| [ 20 40 [ | 2.9% | 97.1% |
+| [ 10 20 [ | 0.5% | 99.5% |
+| [ 0 19 [ | 0% | 100% |
 
 ## Notes
 
