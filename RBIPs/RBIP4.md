@@ -26,13 +26,14 @@ In the ProofOfPerformance.sol contract, once the pop components are calculated, 
 y = (1-decay factor)*k^[(1-decay factor)^(n-1)]
 and a decay factor of 18%. The exponential curve is approximated by intervals as follows:
 
-% of total supply multiplier
-[ 0.05 +++ [ 100%
-[ 0.04 0.05 [ 82%
-[ 0.03 0.04 [ 20.1%
-[ 0.02 0.03 [ 2.9%
-[ 0.01 0.02 [ 0.5%
-[ 0.00 0.01 [ 0.2%
+| % of Total Supply | Multiplier |
+| ----------------- | ---------- |
+| [ 0.05 +++ [ | 100% |
+| [ 0.04 0.05 [ | 82% |
+| [ 0.03 0.04 [ | 20.1% |
+| [ 0.02 0.03 [ | 2.9% |
+| [ 0.01 0.02 [ | 0.5% |
+| [ 0.00 0.01 [ | 0.2% |
 
 ## Rationale
 
