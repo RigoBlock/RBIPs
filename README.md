@@ -12,4 +12,5 @@ RigoBlock Improvement Proposals (RBIPs) describe standards and protocol specific
 | [reduce incentives abuse by using eth as reference.](https://github.com/RigoBlock/RBIPs/issues/2)                    | 2     | 2                |
 | [add slashing condition to pop reward based on GRG pool operator balance.](https://github.com/RigoBlock/RBIPs/issues/4)                    | 4     | 2                |
 | [Incentivize GRG network effect through staking.](https://github.com/RigoBlock/RBIPs/issues/8)                    | 8     | 2                |
-| [Improve for self-custody.](https://github.com/RigoBlock/RBIPs/issues/11)                    | 11     | 2                |
+| [Improve self-custody adapter.](https://github.com/RigoBlock/RBIPs/issues/11)                    | 11     | 2                |
+| [Improve Uniswap adapter.](https://github.com/RigoBlock/RBIPs/issues/12)                    | 12     | TBD                |
