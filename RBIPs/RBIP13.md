@@ -14,19 +14,21 @@ Supports Uniswap V3 through 2 new adapters.
 
 ## Abstract
 
-TODO
+Allows performing swaps and providing liquidity to Uniswap V3 on top of existing Uniswap V2 support.
 
 ## Motivation
 
-TODO
+Uniswap V3 consists of a different set of contracts and interfaces than V2, therefore requires a custom adapter implementation.
 
 ## Specification
 
-TODO
+2 new contracts to be added to the protocol:
+- AUniswapV3, which supports swaps
+- AUniswapNFTMGR, which supports providing liquidity
 
 ## Notes
 
-TODO
+https://github.com/Uniswap/v3-periphery/tree/main/contracts
 
 ## Test Cases
 
