@@ -5,7 +5,7 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Core
-    Status: In progress
+    Status: Final
     Created: 2021-01-11
 
 ## Simple Summary
@@ -14,23 +14,15 @@ Improves existing self custody adapter.
 
 ## Abstract
 
-TODO
+Implements safeTransfer when tokens are transferred through the proxy contract.
 
 ## Motivation
 
-TODO
+Certain old tokens do not return a boolean when being transferred, therefore resulting in transfer fail when called with standard ERC20 transfer call.
 
 ## Specification
 
-TODO
-
-## Notes
-
-TODO
-
-## Test Cases
-
-## Implementation
+Use openzeppelin safeTransfer library
 
 ## Copyright
 
