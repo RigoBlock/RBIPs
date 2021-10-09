@@ -10,19 +10,19 @@
 
 ## Simple Summary
 
-Improves existing self custody adapter.
+Easier to understand GRG holding requirement and transfer any token.
 
 ## Abstract
 
-Implements safeTransfer when tokens are transferred through the proxy contract.
+Removes free tier of GRG holding when transferring tokens to self custody. Implements safeTransfer when tokens are transferred using the ASelfCustody adapter.
 
 ## Motivation
 
-Certain old tokens do not return a boolean when being transferred, therefore resulting in transfer fail when called with standard ERC20 transfer call.
+Self custody is a feature designed for professional market marker who have no issue holding a minimum amount of GRG. Certain old tokens do not return a boolean when being transferred, therefore resulting in transfer fail when called with standard ERC20 transfer call.
 
 ## Specification
 
-Use openzeppelin safeTransfer library
+Amend GRG holding calculations to support new tiers. Use openzeppelin safeTransfer library.
 
 ## Copyright
 
