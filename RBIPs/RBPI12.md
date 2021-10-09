@@ -5,28 +5,24 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Core
-    Status: In progress
+    Status: Final
     Created: 2021-01-11
 
 ## Simple Summary
 
-Improves existing Uniswap adapter.
+Implement safeApprove for token approvals in AUniswapV2.
 
 ## Abstract
 
-TODO
+Implements safeApprove in the Uniswap V2 adapter.
 
 ## Motivation
 
-TODO
+Certain old tokens do not return a boolean, therefore resulting in failed approve when using a standard ERC20 interface.
 
 ## Specification
 
-TODO
-
-## Notes
-
-TODO
+Use OpenZeppeling safeApprove.
 
 ## Test Cases
 
