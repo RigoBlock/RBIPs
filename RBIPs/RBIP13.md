@@ -5,7 +5,7 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Core
-    Status: In progress
+    Status: Final
     Created: 2021-10-09
 
 ## Simple Summary
@@ -33,6 +33,10 @@ https://github.com/Uniswap/v3-periphery/tree/main/contracts
 ## Test Cases
 
 ## Implementation
+
+https://github.com/RigoBlock/rigoblock-monorepo/blob/development/packages/contracts/src/protocol/extensions/adapters/AUniswapV3.sol
+
+https://github.com/RigoBlock/rigoblock-monorepo/blob/development/packages/contracts/src/protocol/extensions/adapters/AUniswapV3NPM.sol
 
 ## Copyright
 
