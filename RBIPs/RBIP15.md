@@ -29,6 +29,8 @@ The newly deployed implementation must be attached to the staking proxy by first
 
 ## Test Cases
 
+https://github.com/RigoBlock/v3-contracts/blob/development/test/staking/StakingProxy.spec.ts
+
 ## Implementation
 
 [[https://github.com/RigoBlock/rigoblock-monorepo/blob/development/packages/contracts/src/protocol/extensions/adapters/AUniswapV3.sol
