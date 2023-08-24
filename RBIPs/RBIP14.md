@@ -34,6 +34,8 @@ Deterministic deployment allows for the same pool address on different chains, a
 
 ## Test Cases
 
+https://github.com/RigoBlock/v3-contracts/tree/development/test/core
+
 ## Implementation
 
 [https://github.com/RigoBlock/rigoblock-monorepo/blob/development/packages/contracts/src/protocol/extensions/adapters/AUniswapV3.sol
