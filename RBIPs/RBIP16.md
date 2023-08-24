@@ -22,6 +22,10 @@ As we are preparing to launch the staking system on L2s, it is a good opportunit
 There are several improvements that have very little risk of vulnerabilities and make the system more efficient.
 
 ## Specification
+- should refactor code
+- should optimize storage
+- should use new pool registry
+- should use new proof of performance address
 
 ## Notes
 
