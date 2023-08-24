@@ -31,6 +31,8 @@ There are several improvements that have very little risk of vulnerabilities and
 
 ## Test Cases
 
+https://github.com/RigoBlock/v3-contracts/tree/development/test/staking
+
 ## Implementation
 
 https://github.com/RigoBlock/v3-contracts/tree/development/contracts/staking
