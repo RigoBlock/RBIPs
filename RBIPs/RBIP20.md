@@ -30,7 +30,7 @@ The adapter needs to be added to the protocol Authority smart contract. Its meth
 
 ## Notes
 
-The Rigoblock governance adapter was deployed on Feb 10, 2023.
+The Rigoblock governance adapter was deployed on Feb 11, 2023.
 
 ## Test Cases
 
