@@ -1,6 +1,6 @@
 ## Preamble
 
-    RBIP: 19
+    RBIP: 20
     Title: Rigoblock Governance
     Author: RB Core Team
     Type: Standard Track
