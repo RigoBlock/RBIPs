@@ -1,12 +1,12 @@
 ## Preamble
 
     RBIP: 22
-    Title: Rigoblock Governance
+    Title: Cross-chain adapter
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Core
-    Status: Final
-    Created: 2023-02-08
+    Status: Draft
+    Created: 2023-09-02
 
 ## Simple Summary
 
@@ -14,8 +14,7 @@ Allow pools to perform cross-chain token bridging transactions.
 
 ## Abstract
 
-The Rigoblock governance is a set of smart contracts that formally own all Rigoblock protocol and staking smart contracts.
-Smart pools need an extension to interact with the governance.
+Rigoblock pools perform cross-chain transactions by means of a custom extension that allowes interacting with pre-set bridges and batches approval settings in the transaction.
 
 ## Motivation
 
