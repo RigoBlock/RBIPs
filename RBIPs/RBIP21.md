@@ -53,9 +53,22 @@ as we know that the token out is the last 20 bytes of the path string.
 Defining length = data.length will not necessarily save gas
 using the condition `hasMultiplePools` could be levied as this will be used in the multi-hop swap method.
 
+Lastly, the adapter should allow swapping for a non-whitelisted base token, as this would otherwise make it impossible for
+pools based in non-whitelisted tokens to swap back to base token. Obviously, we cannot whitelist a token just because
+a pool using it as base token exists, therefore it should be implemented as further condition
+```
+const tokenOut = ...
+if (!tokensOut = pool.baseToken()) { _assertTokenWhitelisted(tokenOut); }
+```
+
 ## Notes
 
 RigoBlock/v3-contracts#307
+We must assert that upgrading to uniswap universal router improves gas efficiency. In fact, since the universal router still imports the
+v2 and v3 router as the uniswap router2 does, we want to make sure that the added complexity in decoding/encoding universal router is
+justified. Otherwise we can fix the issues in the adapter by still using the uniswap router 2 contract and later upgrade to universal router.
+One of the positives of upgrading to universal router is that the universal router api will get better support. One of the negatives
+is that in late Autumn '23 it will be upgraded again to support uniswap v4, which will entail yet another rigoblock adapter upgrade.
 
 ## Test Cases
 
