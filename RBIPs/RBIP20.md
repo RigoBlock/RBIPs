@@ -1,7 +1,7 @@
 ## Preamble
 
     RBIP: 20
-    Title: Rigoblock Governance
+    Title: Rigoblock Governance adapter
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Core
