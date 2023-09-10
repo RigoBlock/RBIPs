@@ -1,6 +1,6 @@
 ## Preamble
 
-    RBIP: 15
+    RBIP: 16
     Title: Refactor Staking Implementation
     Author: RB Core Team
     Type: Standard Track
