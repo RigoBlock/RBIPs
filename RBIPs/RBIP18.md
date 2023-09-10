@@ -1,7 +1,7 @@
 ## Preamble
 
-    RBIP: 17
-    Title: Upgrade Proof of Performance
+    RBIP: 18
+    Title: GRG staking adapter
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Core
