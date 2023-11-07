@@ -34,11 +34,11 @@ The token assertion should be moved in the try/catch statement and decimals shou
 
 ## Notes
 
-Requires governance approval. The issue only does not affect existing pools, so there is no need for pools to be upgraded by their pool operators to the latest implementation.
+Requires governance approval. The issue does not affect existing pools, so there is no need for pools to be upgraded by their pool operators to the latest implementation.
 
 ## Test Cases
 
-[Tests](https://github.com/RigoBlock/v3-contracts/blob/fix/base-token-deploy/test/factory/RigoblockPool.ProxyFactory.spec.ts)
+[Tests](https://github.com/RigoBlock/v3-contracts/blob/ba1af6ad43d309efd3ef7e996d646bbd1af8bfa1/test/factory/RigoblockPool.ProxyFactory.spec.ts)
 
 ## Implementation
 
