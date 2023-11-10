@@ -5,7 +5,7 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Core
-    Status: Draft
+    Status: Final
     Created: 2023-11-7
 
 ## Simple Summary
@@ -31,6 +31,8 @@ without catching the revert reason for gas optimizations.
 
 The decimals initialization should not make an assertion when the token is base currency as we define 18 decimals.
 The token assertion should be moved in the try/catch statement and decimals should be defined case by case instead of initially set to 18 and overwritten if different.
+
+As the implementation gets upgraded, the `VERSION` deployment constant shall be updated to 3.1.2.
 
 ## Notes
 
