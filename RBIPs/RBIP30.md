@@ -1,6 +1,6 @@
 ## Preamble
 
-    RBIP: 25
+    RBIP: 30
     Title: Empty initialization fix in pool implementation
     Author: RB Core Team
     Type: Standard Track
