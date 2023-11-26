@@ -24,3 +24,4 @@ RigoBlock Improvement Proposals (RBIPs) describe standards and protocol specific
 | [Rigoblock Governance adapter.](https://github.com/RigoBlock/RBIPs/issues/20)                    | 20     | 3                |
 | [Upgrade Uniswap adapter.](https://github.com/RigoBlock/RBIPs/issues/21)                    | 21     | 3                |
 | [Empty initialization fix in pool implementation.](https://github.com/RigoBlock/RBIPs/issues/30)                    | 30     | 3                |
+| [Deprecate self custody feature.](https://github.com/RigoBlock/RBIPs/issues/31)                    | 31     | 3                |
