@@ -1,10 +1,10 @@
 ## Preamble
 
     RBIP: 36
-    Title: Protocol: Withdraw Pool-owned Tokens
+    Title: Withdraw Pool-owned Tokens
     Author: RB Core Team
     Type: Standard Track
-    Category (*only required for Standard Track): Governance
+    Category (*only required for Standard Track): Protocol
     Status: Draft
     Created: 2024-03-11
 

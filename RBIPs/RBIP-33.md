@@ -1,7 +1,7 @@
 ## Preamble
 
     RBIP: 33
-    Title: Governance: prevent use of rogue strategy
+    Title: Prevent use of rogue strategy
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Governance

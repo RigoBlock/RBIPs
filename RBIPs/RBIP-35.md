@@ -1,10 +1,10 @@
 ## Preamble
 
     RBIP: 35
-    Title: Protocol: Autonomous Unitary Value Calculation
+    Title: Autonomous Unitary Value Calculation
     Author: RB Core Team
     Type: Standard Track
-    Category (*only required for Standard Track): Governance
+    Category (*only required for Standard Track): Protocol
     Status: Draft
     Created: 2024-03-08
 
