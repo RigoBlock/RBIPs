@@ -31,6 +31,7 @@ ERC4626 provides a standard for vaults, which exposes methods that return the un
 
 ## Notes
 [OpenZeppelin reference code](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC4626.sol)
+
 [ERC-4626 inflation attacks](https://blog.openzeppelin.com/a-novel-defense-against-erc4626-inflation-attacks)
 
 ## Test Cases
