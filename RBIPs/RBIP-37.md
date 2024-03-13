@@ -4,7 +4,7 @@
     Title: Represent GRG Staking Proxy balances as ERC4626
     Author: RB Core Team
     Type: Standard Track
-    Category (*only required for Standard Track): Protocol
+    Category (*only required for Standard Track): Staking
     Status: Draft
     Created: 2024-03-12
 
