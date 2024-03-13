@@ -37,6 +37,24 @@ As these actions express rogue behaviour, a rogue token cannot be accidentally a
 - clear owned token mapping when a token is sold completely
   - this will avoid exploding gas costs in mint and burn operations as a smart pool gets in and out a big number of tokens.
 
+Intended flow:
+- on *create pool* operations, the system will check that the chosen base token has an oracle feed as per specifications
+  - the transaction will revert if no price feed is found, as otherwise it won't be possible to calculate the pool value in base token units.
+- on *swap* operations, the system will check that the incoming token has an oracle price feed as per specifications, and will return an error if it does not.
+
+If an oracle feed for a said token exists, but its cardinality is too low, we should consider extending it as a fallback, instead of reverting the transaction. However, this will add to the transaction cost, so we may instead return an error message on the interface prompting the user to extend the cardinality himself.
+
+The oracle pair will always be *target token* and *Token(address(0))* for universal encoding. We must check if this correctly works on all networks (polygon especially as MATIC has multiple non-null addresses).
+A canonical oracle implementation will be selected (either a Uniswap canonical oracles hook, or a custom designed one).
+Retrieving the oracle key is simple, as it is a function of known parameters:
+- currency0 -> `Currency(address(0))`
+- currency1 -> `Currency(targetToken)`
+- fee ->  `uint24(0)` (oracles have 0 fee)
+- tickSpacing -> `MAX_TICK_SPACING`
+- hooks -> `IHooks(canonicalOracleHookAddress)`
+
+It is yet to be decided whether the oracle feed assertions should be developed in a non-upgradable library (any changes will require pool operator's implementation upgrade) or in a dedicated extension. As the code relevant to assertions does not execute write operations, using an extension does not pose security concerns, however will increase the gas cost by ~2100 gas. Pros and cons of using an extension within the core contracts (i.e., *mint* and *burn* operations) will be evaluated.
+
 ## Test Cases
 TBD.
 
