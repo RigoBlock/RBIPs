@@ -64,6 +64,9 @@ As a general rule, when implementing this feature, the default smart pool holdin
 ## Notes
 This RBIP requires adding a storage slot for owned tokens (plus one for owned positions), as in [RBIP-28](https://github.com/RigoBlock/RBIPs/issues/28).
 
+Oracles should be pruned of front-and-back running rogue price updates (flashbot attacks that can last 2 or more consecutive blocks). Oracle could be truncated to 9116 ticks (2.5x price movement), but a back-running protection should prevent a rogue oracle update regardless. An oracle may be considered valid if if contains a minimum of liquidity, but this is difficult to assert formally as the threshold would be discretionary.
+Setting a longer default burn lockup (currently 2 blocks) will also help reduce the attack surface.
+
 ## Test Cases
 TBD.
 
