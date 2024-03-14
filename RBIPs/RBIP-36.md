@@ -42,6 +42,8 @@ This feature could be implemented without modifications to the interface in the 
 ## Notes
 As with RBIP-35, we'd prefer this feature be implemented as a library rather than as an extension, so be part of the core instead of being a moving component. To reduce the size of the implementation, the method should be added to the *Actions* sub-contract, with a direct call (no forwarding to self, which would otherwise execute as view since write calls to the extensions are restricted to the pool owner) to the custom extension. In this context, we would like to prevent a whitelister from updating the selector mapping and restrict this permission to the governance only.
 
+This feature will substitute [RBIP-26](https://github.com/RigoBlock/RBIPs/issues/26).
+
 ## Test Cases
 TBD.
 
