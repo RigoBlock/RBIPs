@@ -5,7 +5,7 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Protocol
-    Status: Draft
+    Status: Final
     Created: 2024-06-06
 
 ## Simple Summary
@@ -28,11 +28,12 @@ TBD. Currently the opcodes are supported in the EVM since the Dencun hardfork; i
 Future releases of Solidity are expected to bring support in the language, and a breaking change, i.e. v0.9, will add redesign the feature (future v0.8 language support are a temporary workaround).
 
 Notes: [EIP-1153](https://eips.ethereum.org/EIPS/eip-1153)
+
 ## Test Cases
 TBD.
 
 ## Implementation
-TBD.
+[TReentrancyGuardTransient](https://github.com/RigoBlock/v3-contracts/blob/f291f12a8b3f07b8893038551177db030eba295c/contracts/protocol/libraries/ReentrancyGuardTransient.sol#L28)
 
 ## Copyright
 

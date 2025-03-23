@@ -5,7 +5,7 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Governance, Protocol
-    Status: Draft
+    Status: Rejected
     Created: 2024-03-06
 
 ## Simple Summary
@@ -32,7 +32,9 @@ Should also check if we want to just use a low-level staticcall when calling an 
 the need for gas limit on staticcall to prevent reentrancy.
 
 ## Notes
-TBD
+- Notice: the proposal has been rejected, as the `initializePool()` method only performs view calls to arbitrary external contracts (i.e. query base token decimals),
+this not being subject to reentrancy attack. A future upgrade to make write calls to an external contract could introduce the described vulnerability, but there are
+no plans to modify pool initialization.
 
 ## Test Cases
 TBD

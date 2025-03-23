@@ -5,7 +5,7 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Protocol
-    Status: Draft
+    Status: Final
     Created: 2024-03-08
 
 ## Simple Summary
@@ -67,11 +67,15 @@ This RBIP requires adding a storage slot for owned tokens (plus one for owned po
 Oracles should be pruned of front-and-back running rogue price updates (flashbot attacks that can last 2 or more consecutive blocks). Oracle could be truncated to 9116 ticks (2.5x price movement), but a back-running protection should prevent a rogue oracle update regardless. An oracle may be considered valid if if contains a minimum of liquidity, but this is difficult to assert formally as the threshold would be discretionary.
 Setting a longer default burn lockup (currently 2 blocks) will also help reduce the attack surface.
 
+Notice: the RBIP is approved and will be included in the Rigoblock V4 SmartPool implementation upgrade (subject to onchain governance upgrade of the canonical implementation in the proxy factory smart contract). Individual smart pools will have to upgrade proxy implementation in order to use this new feature.
+
 ## Test Cases
-TBD.
+[Smart pool updated tests](https://github.com/RigoBlock/v3-contracts/blob/development/test/core/RigoblockPool.spec.ts)
+[Base token smart pool updated tests](https://github.com/RigoBlock/v3-contracts/blob/development/test/core/RigoblockPool.Basetoken.spec.ts)
 
 ## Implementation
-TBD.
+[Automated nav Github PR](https://github.com/RigoBlock/v3-contracts/pull/622)
+[MixinPoolValue.sol](https://github.com/RigoBlock/v3-contracts/blob/development/contracts/protocol/core/state/MixinPoolValue.sol)
 
 
 ## Copyright

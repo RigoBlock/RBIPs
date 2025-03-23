@@ -5,7 +5,7 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Extensions
-    Status: Draft
+    Status: Rejected
     Created: 2023-11-26
 
 ## Simple Summary
@@ -45,6 +45,8 @@ function _safeApprove(address token, address spender, uint256 amount) internal {
 
 - An initial implementation has been proposed [here](https://github.com/RigoBlock/v3-contracts/issues/391).
 - As Uniswap is launching v4 sometime in Q1 2024, it would be ideal to have this proposal combined with the future proposal to support the new release.
+
+- UPDATE: the proposal has been rejected, as the try/catch statements do not solve the problem, as they make standard ERC20 approvals more expensive.
 
 ## Test Cases
 

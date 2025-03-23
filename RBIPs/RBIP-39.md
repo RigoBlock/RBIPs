@@ -5,7 +5,7 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Protocol
-    Status: Draft
+    Status: Final
     Created: 2024-03-13
 
 ## Simple Summary
@@ -55,11 +55,16 @@ Retrieving the oracle key is simple, as it is a function of known parameters:
 
 It is yet to be decided whether the oracle feed assertions should be developed in a non-upgradable library (any changes will require pool operator's implementation upgrade) or in a dedicated extension. As the code relevant to assertions does not execute write operations, using an extension does not pose security concerns, however will increase the gas cost by ~2100 gas. Pros and cons of using an extension within the core contracts (i.e., *mint* and *burn* operations) will be evaluated.
 
+Notice: the price feed check is executed only if the token is not already active, i.e. first the expected storage slot is read (2100 gas) and then the oracle call is performed as a fallback. This makes transactions using frequently used tokens less gas-expensive. The new feature will be included in Rigoblock V4.
+ 
 ## Test Cases
-TBD.
+[Modify liquidity tests](https://github.com/RigoBlock/v3-contracts/blob/f291f12a8b3f07b8893038551177db030eba295c/test/extensions/AUniswapRouter.spec.ts#L221)
+[Swap tests](https://github.com/RigoBlock/v3-contracts/blob/f291f12a8b3f07b8893038551177db030eba295c/test/extensions/AUniswapRouter.spec.ts#L911)
 
 ## Implementation
-TBD.
+[Oracle extension](https://github.com/RigoBlock/v3-contracts/blob/development/contracts/protocol/extensions/EOracle.sol)
+[Price feed assertion](https://github.com/RigoBlock/v3-contracts/blob/f291f12a8b3f07b8893038551177db030eba295c/contracts/protocol/libraries/EnumerableSet.sol#L62)
+[Oracle use in token operation](https://github.com/RigoBlock/v3-contracts/blob/f291f12a8b3f07b8893038551177db030eba295c/contracts/protocol/extensions/adapters/AUniswapRouter.sol#L197)
 
 
 ## Copyright

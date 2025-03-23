@@ -5,7 +5,7 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Protocol
-    Status: Draft
+    Status: Final
     Created: 2024-03-13
 
 ## Simple Summary
@@ -29,11 +29,13 @@ Add one further assertion [before trying to burn](https://github.com/RigoBlock/v
 ## Notes
 This RBIP could be made obsolete by either implementing [RBIP-36](https://github.com/RigoBlock/RBIPs/issues/36) and partially by [EBIP-35](https://github.com/RigoBlock/RBIPs/issues/35).
 
+Notice: the burn method uses SafeTransferLib.sol, which reverts with an error for transfer failures. Will be included in Rigoblock V4.
+
 ## Test Cases
-TBD.
+[Tests](https://github.com/RigoBlock/v3-contracts/blob/f291f12a8b3f07b8893038551177db030eba295c/test/core/RigoblockPool.Basetoken.spec.ts#L250)
 
 ## Implementation
-TBD.
+[Burn token transfer](https://github.com/RigoBlock/v3-contracts/blob/f291f12a8b3f07b8893038551177db030eba295c/contracts/protocol/core/actions/MixinActions.sol#L182)
 
 
 ## Copyright
