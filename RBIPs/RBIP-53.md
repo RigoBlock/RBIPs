@@ -26,7 +26,7 @@ approved is a necessary step, as otherwise a user could potentially mint pool to
 
 ## Specification
 
-The selected token should be pre-approved as receivable in the pool by the pool operator. If not already in the active tokens list, a mint operation should prompt adding the token to the active token list. The token must have a price feed (this assertion is verified when pushing the token to the active tokens, however the balance would be null until a mint in the desired token is executed).
+The selected token should be pre-approved as receivable in the pool by the pool operator. If not already in the active tokens list, a mint operation should prompt adding the token to the active token list. The token must have a price feed (this assertion is verified when pushing the token to the active tokens, but must preemptively be verified when the token is accepted for mint to prevent unexpected reverts on mint subsequently). We will not push the token to the active tokens list until the token actually enters the pool. To save gas on adding the token as acceptable, we can skip oracle check if the token is already active (i.e. the pool already holds it).
 
 Having the ability to use multiple tokens for minting would allow new types of uses for the vault. For example, project/DAO treasuries could create (or delegate someone to) a pool with their own token as base token, and add both their token and i.e. a stablecoin to the pool, enabling the:
 
@@ -36,6 +36,8 @@ Having the ability to use multiple tokens for minting would allow new types of u
 - generation of yield on their otherwise idle assets (p2p lending, yield farming, ...)
 
 without the need to execute a token swap beforehand.
+
+Notice: as we allow burning for any held token when the pool does not have enough liquidity in base token, we could also allow burning for an approved token at any time, meaning the pool operator can decide to allow burn for a token. This becomes relevant as opening the burn to any token might be undesireable for the pool operator, as smaller liquidity tokens could become target of oracle manipulation.
 
 ## Test Cases
 TBD.
