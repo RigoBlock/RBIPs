@@ -5,7 +5,7 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Governance
-    Status: Draft
+    Status: Final
     Created: 2023-12-02
 
 ## Simple Summary
