@@ -5,7 +5,7 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Protocol
-    Status: Draft
+    Status: Rejected
     Created: 2024-06-06
 
 ## Simple Summary
@@ -23,14 +23,13 @@ To reduce the use of inline assembly and catch errors in the underlying call. To
 
 
 ## Specification
-TBD.
-Notice: Sometimes we read from an external contract with staticcall to ensure we cannot execute write operations. Using a try/catch statement will not always be possible in these instances.
+Notice: Sometimes we read from an external contract with `staticcall` to ensure we cannot execute write operations. Using a try/catch statement will not always be possible in these instances.
 
 ## Test Cases
-TBD.
+NA.
 
 ## Implementation
-TBD.
+NA.
 
 ## Copyright
 

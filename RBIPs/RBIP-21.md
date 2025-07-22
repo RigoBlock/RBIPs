@@ -59,18 +59,13 @@ if (!tokensOut = pool.baseToken()) { _assertTokenWhitelisted(tokenOut); }
 
 ## Notes
 
-RigoBlock/v3-contracts#307
-We must assert that upgrading to an uniswap universal router improves gas efficiency. In fact, since the universal router still imports the
-v2 and v3 router as the uniswap router2 does, we want to make sure that the added complexity in decoding/encoding the universal router is
-justified. Otherwise, we can fix the issues in the adapter by still using the Uniswap router 2 contract and later upgrading to the universal router.
-One of the positives of upgrading to the universal router is that the universal router API will get better support. One of the negatives
-is that in late Autumn '23 it will be upgraded again to support Uniswap v4, which will result in yet another rigoblock adapter upgrade.
+Updated with gas benefits for swaps that route through multiple pools and support for Uniswap v4.
 
 ## Test Cases
 https://github.com/RigoBlock/v3-contracts/blob/development/test/extensions/AUniswap.spec.ts
 
 ## Implementation
-https://github.com/RigoBlock/v3-contracts/blob/development/contracts/protocol/extensions/adapters/AUniswap.sol
+https://github.com/RigoBlock/v3-contracts/blob/development/contracts/protocol/extensions/adapters/AUniswapRouter.sol
 
 ## Copyright
 

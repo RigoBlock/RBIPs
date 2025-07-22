@@ -5,7 +5,7 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Protocol
-    Status: Draft
+    Status: Final
     Created: 2024-03-11
 
 ## Simple Summary
@@ -45,10 +45,10 @@ As with RBIP-35, we'd prefer this feature be implemented as a library rather tha
 This feature will substitute [RBIP-26](https://github.com/RigoBlock/RBIPs/issues/26).
 
 ## Test Cases
-TBD.
+[TBD.](https://github.com/RigoBlock/v3-contracts/blob/3c13e1560a0d0ada09309d4fbef2d689976c512e/test/core/RigoblockPool.Basetoken.spec.ts#L431)
 
 ## Implementation
-TBD.
+https://github.com/RigoBlock/v3-contracts/blob/3c13e1560a0d0ada09309d4fbef2d689976c512e/contracts/protocol/core/actions/MixinActions.sol#L75
 
 
 ## Copyright
