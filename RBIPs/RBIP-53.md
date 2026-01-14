@@ -5,7 +5,7 @@
     Author: RB Core Team
     Type: Standard Track
     Category (*only required for Standard Track): Protocol
-    Status: Draft
+    Status: Final
     Created: 2025-07-22
 
 ## Simple Summary
@@ -40,10 +40,10 @@ without the need to execute a token swap beforehand.
 Notice: as we allow burning for any held token when the pool does not have enough liquidity in base token, we could also allow burning for an approved token at any time, meaning the pool operator can decide to allow burn for a token. This becomes relevant as opening the burn to any token might be undesireable for the pool operator, as smaller liquidity tokens could become target of oracle manipulation.
 
 ## Test Cases
-TBD.
+[PR](https://github.com/RigoBlock/v3-contracts/pull/799).
 
 ## Implementation
-TBD.
+[PR](https://github.com/RigoBlock/v3-contracts/pull/799).
 
 
 ## Copyright
